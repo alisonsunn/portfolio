@@ -1,12 +1,26 @@
 @import './src/vars.module.scss';
 
 .container {
+  position: relative;
   display: flex;
   flex-direction: row;
   color: var(--white-color);
   font-family: var(--font-robot);
   padding: 61px 188px;
   background-color: var(--bg-color);
+
+  #Ellipse1 {
+    position: absolute;
+    top: -215px;
+    right: 0px;
+    z-index: 1;
+  }
+
+  #Ellipse2 {
+    position: absolute;
+    top: -228px;
+    left: 0px;
+  }
 
   .content {
     display: flex;
@@ -18,12 +32,14 @@
     h1 {
       font-size: 72px;
       font-weight: 800;
+      z-index: 2;
     }
 
     p {
       font-weight: 400;
       font-size: 30px;
       line-height: 35px;
+      z-index: 2;
     }
 
     a {
@@ -36,6 +52,7 @@
       height: 73px;
       line-height: 73px;
       border-radius: 100px;
+      z-index: 2;
     }
 
     span {
@@ -53,7 +70,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    z-index: 2;
+
     div {
       height: 450px;
       width: 450px;
@@ -78,5 +96,25 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-  };
-} 
+
+    #Ellipse2 {
+      width: 226.71px;
+      height: auto;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      z-index: 1;
+      opacity: 0.6;
+    }
+
+    #Ellipse1 {
+      width: 250px;
+      height: auto;
+      top: 380px;
+      right: 0px;
+      opacity: 0.6;
+    }
+  }
+
+  ;
+}
