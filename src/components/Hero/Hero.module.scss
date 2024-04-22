@@ -1,9 +1,12 @@
+@import './src/vars.module.scss';
+
 .container {
   display: flex;
   flex-direction: row;
   color: var(--white-color);
   font-family: var(--font-robot);
   padding: 61px 188px;
+  background-color: var(--bg-color);
 
   .content {
     display: flex;
